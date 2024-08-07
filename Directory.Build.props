@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project>
+	<PropertyGroup>
+		<UseArtifactsOutput>true</UseArtifactsOutput>
+		<RootNamespace>DarkPatterns.Quickstart</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DarkPatterns.Build.Structure" Version="0.1.0" PrivateAssets="All" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+{
+	"name": "quickstart-tools",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "dotnet test"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT"
+}
