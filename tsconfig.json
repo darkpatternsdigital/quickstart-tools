@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"skipLibCheck": true,
+		"lib": ["ESNext"],
+		"types": ["node"]
+	},
+	"references": [
+		{
+			"path": "./packages/eslint-config"
+		}
+	],
+	"exclude": ["./artifacts"]
+}
