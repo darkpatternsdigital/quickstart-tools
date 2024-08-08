@@ -1,8 +1,7 @@
 {
+	"extends": "@darkpatternsdigital/tsconfigs/base",
 	"compilerOptions": {
-		"skipLibCheck": true,
-		"lib": ["ESNext"],
-		"types": ["node"]
+		"noEmit": true
 	},
 	"references": [
 		{

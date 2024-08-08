@@ -1,33 +1,20 @@
 {
-	"name": "@darkpatternsdigital/eslint-config",
+	"name": "@darkpatternsdigital/tsconfigs",
 	"version": "0.1.0",
 	"description": "",
 	"type": "module",
 	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"import": {
-				"types": "./dist/index.d.ts",
-				"default": "./dist/index.js"
-			}
-		},
 		"./*": {
-			"types": "./dist/*.d.ts",
-			"import": {
-				"types": "./dist/*.d.ts",
-				"default": "./dist/*.js"
-			}
+			"default": "./configs/tsconfig.*.json"
 		}
 	},
 	"scripts": {
-		"build": "tsc -b",
-		"lint": "pnpm -w lint"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "MIT",
 	"files": [
-		"dist/*",
+		"configs/*",
 		"README.md"
 	],
 	"peerDependencies": {
@@ -40,7 +27,6 @@
 		"typescript-eslint": "^8.0.1"
 	},
 	"devDependencies": {
-		"@darkpatternsdigital/tsconfigs": "workspace:^",
 		"@types/eslint-config-prettier": "^6.11.3"
 	}
 }

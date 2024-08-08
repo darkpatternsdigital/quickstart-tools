@@ -1,4 +1,5 @@
 .vscode/settings.json
-**/package.json
+package.json
 /pnpm-lock.yaml
 *.md
+dist

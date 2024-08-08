@@ -11,6 +11,9 @@ importers:
       '@darkpatternsdigital/eslint-config':
         specifier: workspace:^
         version: link:packages/eslint-config
+      '@darkpatternsdigital/tsconfigs':
+        specifier: workspace:^
+        version: link:packages/tsconfigs
       '@eslint/compat':
         specifier: ^1.1.1
         version: 1.1.1
@@ -25,6 +28,31 @@ importers:
         version: 5.5.4
 
   packages/eslint-config:
+    dependencies:
+      '@eslint/js':
+        specifier: ^9.8.0
+        version: 9.8.0
+      '@types/eslint__js':
+        specifier: ^8.42.3
+        version: 8.42.3
+      eslint:
+        specifier: '>=9'
+        version: 9.8.0
+      eslint-config-prettier:
+        specifier: ^9.1.0
+        version: 9.1.0(eslint@9.8.0)
+      typescript-eslint:
+        specifier: ^8.0.1
+        version: 8.0.1(eslint@9.8.0)(typescript@5.5.4)
+    devDependencies:
+      '@darkpatternsdigital/tsconfigs':
+        specifier: workspace:^
+        version: link:../tsconfigs
+      '@types/eslint-config-prettier':
+        specifier: ^6.11.3
+        version: 6.11.3
+
+  packages/tsconfigs:
     dependencies:
       '@eslint/js':
         specifier: ^9.8.0
