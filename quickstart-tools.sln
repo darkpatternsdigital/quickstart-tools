@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eslint-config", "packages\e
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tsconfigs", "packages\tsconfigs\tsconfigs.csproj", "{4246B19C-C4BD-4F9A-84A2-008DA12F8C77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prettier-config", "packages\prettier-config\prettier-config.csproj", "{8F0873A8-EA65-47C0-9702-E6BCD587E041}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +28,14 @@ Global
 		{4246B19C-C4BD-4F9A-84A2-008DA12F8C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4246B19C-C4BD-4F9A-84A2-008DA12F8C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4246B19C-C4BD-4F9A-84A2-008DA12F8C77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F0873A8-EA65-47C0-9702-E6BCD587E041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F0873A8-EA65-47C0-9702-E6BCD587E041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F0873A8-EA65-47C0-9702-E6BCD587E041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F0873A8-EA65-47C0-9702-E6BCD587E041}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{059FD211-82C8-4CF2-B656-9515471675D9} = {BD1DE9D5-6FCD-4E97-9BE4-3BE6F0AFC8F0}
 		{4246B19C-C4BD-4F9A-84A2-008DA12F8C77} = {BD1DE9D5-6FCD-4E97-9BE4-3BE6F0AFC8F0}
+		{8F0873A8-EA65-47C0-9702-E6BCD587E041} = {BD1DE9D5-6FCD-4E97-9BE4-3BE6F0AFC8F0}
 	EndGlobalSection
 EndGlobal

@@ -1,7 +1,6 @@
-import tseslint from "typescript-eslint";
-import type { TSESLint } from "@typescript-eslint/utils";
-import eslintConfigPrettier from "eslint-config-prettier";
-import untyped from "./untyped";
+import tseslint from 'typescript-eslint';
+import eslintConfigPrettier from 'eslint-config-prettier';
+import untyped from './untyped.js';
 
 export default tseslint.config(
 	...untyped,
@@ -14,4 +13,4 @@ export default tseslint.config(
 			},
 		},
 	},
-) as TSESLint.FlatConfig.ConfigArray;
+);

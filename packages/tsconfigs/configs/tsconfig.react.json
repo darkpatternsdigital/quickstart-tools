@@ -3,6 +3,6 @@
 	"extends": "./tsconfig.base.json",
 	"compilerOptions": {
 		"lib": ["ESNext", "DOM", "DOM.Iterable", "WebWorker"],
-		"jsx": "react-jsx",
+		"jsx": "react-jsx"
 	}
 }

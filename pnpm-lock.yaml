@@ -11,6 +11,9 @@ importers:
       '@darkpatternsdigital/eslint-config':
         specifier: workspace:^
         version: link:packages/eslint-config
+      '@darkpatternsdigital/prettier-config':
+        specifier: workspace:^
+        version: link:packages/prettier-config
       '@darkpatternsdigital/tsconfigs':
         specifier: workspace:^
         version: link:packages/tsconfigs
@@ -51,6 +54,8 @@ importers:
       '@types/eslint-config-prettier':
         specifier: ^6.11.3
         version: 6.11.3
+
+  packages/prettier-config: {}
 
   packages/tsconfigs:
     dependencies:

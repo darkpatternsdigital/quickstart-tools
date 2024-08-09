@@ -19,6 +19,7 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@darkpatternsdigital/eslint-config": "workspace:^",
+		"@darkpatternsdigital/prettier-config": "workspace:^",
 		"@darkpatternsdigital/tsconfigs": "workspace:^",
 		"@eslint/compat": "^1.1.1",
 		"@types/node": "^22.1.0",

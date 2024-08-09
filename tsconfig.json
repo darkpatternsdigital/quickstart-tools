@@ -1,12 +1,14 @@
 {
 	"extends": "@darkpatternsdigital/tsconfigs/base",
 	"compilerOptions": {
-		"noEmit": true
+		"noEmit": true,
+		"allowJs": true
 	},
 	"references": [
 		{
 			"path": "./packages/eslint-config"
 		}
 	],
+	"include": ["."],
 	"exclude": ["./artifacts"]
 }
