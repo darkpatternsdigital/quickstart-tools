@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net8.0": {
+      "DarkPatterns.Build.Structure": {
+        "type": "Direct",
+        "requested": "[0.1.0, )",
+        "resolved": "0.1.0",
+        "contentHash": "KjXcBxhGkO+Zn7DaKANxAxgZMCdBURVApvJpiBtgSUfUrWE96n1TICJlm5j2rDjJe2p/EMz36QWL2PhpdW1u0w=="
+      },
+      "JsonPeek": {
+        "type": "Direct",
+        "requested": "[1.2.0, )",
+        "resolved": "1.2.0",
+        "contentHash": "Gv/px3/ZIew2598+VHJ2WV5ptkuO5j7vMhJwcL2cy2z2zsvQ5QsIj4PnEbBBCqZKsvhq/W2aUo9ulZsav7fyVw=="
+      }
+    }
+  }
+}

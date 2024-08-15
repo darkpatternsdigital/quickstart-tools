@@ -36,5 +36,9 @@
 		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+	"[github-actions-workflow]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	"dotnet.defaultSolution": "quickstart-tools.sln"
 }

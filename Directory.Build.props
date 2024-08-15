@@ -2,10 +2,17 @@
 <Project>
 	<PropertyGroup>
 		<UseArtifactsOutput>true</UseArtifactsOutput>
+		<UseCorepack>true</UseCorepack>
 		<RootNamespace>DarkPatterns.Quickstart</RootNamespace>
 
 		<TargetFramework>net8.0</TargetFramework>
 		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<!-- These settings assist with builds and deployments of packages -->
+		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+		<AssemblyOriginatorKeyFile Condition="exists('$(SolutionRoot)DarkPatternsDigital.snk')">$(SolutionRoot)DarkPatternsDigital.snk</AssemblyOriginatorKeyFile>
 	</PropertyGroup>
 
 	<ItemGroup>

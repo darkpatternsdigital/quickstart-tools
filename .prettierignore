@@ -3,3 +3,4 @@ package.json
 /pnpm-lock.yaml
 *.md
 dist
+**/packages.lock.json
