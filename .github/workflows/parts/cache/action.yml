@@ -1,6 +1,10 @@
 name: 'Package Cache'
 description: 'Caches packages for this repository'
-inputs: {}
+inputs:
+  npm-registry-target:
+    description: 'Either "npmjs", "github", or a URL'
+    required: false
+    default: 'npmjs'
 outputs: {}
 runs:
   using: 'composite'
@@ -18,3 +22,5 @@ runs:
       uses: pnpm/action-setup@v4
     - name: Setup Node.js
       uses: actions/setup-node@v4
+      with:
+        registry-url: ${{ (inputs.npm-registry-target == 'npmjs' && 'https://registry.npmjs.org/') || (inputs.npm-registry-target == 'github' && 'https://npm.pkg.github.com/') || inputs.npm-registry-target }}
