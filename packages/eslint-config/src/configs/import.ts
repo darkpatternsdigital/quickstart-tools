@@ -10,6 +10,11 @@ import type { ConfigWithExtends } from 'typescript-eslint';
  *
  * The rules below are intended to match the import.recommended configuration...
  * minus the ones that are not working.
+ *
+ * import/no-unresolved - fails to resolve modules
+ * import/namespace - languageOptions.parser is not populated at the time this rule runs
+ * import/no-named-as-default - attempts to use missing `getAncestors` on context
+ * import/no-named-as-default-member - attempts to use missing `getAncestors` on context
  */
 
 export const eslintImportRecommended: ConfigWithExtends = {
