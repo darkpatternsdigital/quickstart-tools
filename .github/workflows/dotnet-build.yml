@@ -51,12 +51,12 @@ jobs:
           dotnet test --no-restore --configuration Release ${VERSION_SUFFIX_PARAM} --verbosity normal --collect:"XPlat Code Coverage"
         env:
           VERSION_SUFFIX: ${{ github.ref != 'refs/heads/main' && github.sha || '' }}
-      - name: 'Upload Code Coverage'
-        uses: actions/upload-artifact@v3
-        with:
-          name: code-coverage
-          path: ./lib/*/TestResults/*/coverage.cobertura.xml
-          retention-days: 7
+      # - name: 'Upload Code Coverage'
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: code-coverage
+      #     path: ./lib/*/TestResults/*/coverage.cobertura.xml
+      #     retention-days: 7
       # - name: Record code coverage
       #   uses: 5monkeys/cobertura-action@master
       #   with:
@@ -80,7 +80,6 @@ jobs:
           NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
 
       - name: Set publish NPM registry
-        if: ${{ github.ref == 'refs/heads/main' }}
         run: |
           echo '@darkpatternsdigital:registry=$NODE_REGISTRY' >> ~/.npmrc
         env:
