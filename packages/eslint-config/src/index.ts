@@ -1,5 +1,5 @@
-import tseslint from 'typescript-eslint';
 import eslintConfigPrettier from 'eslint-config-prettier';
+import tseslint from 'typescript-eslint';
 import untyped from './untyped.js';
 
 export default tseslint.config(
