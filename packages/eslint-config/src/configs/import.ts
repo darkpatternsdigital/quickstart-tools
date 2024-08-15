@@ -1,6 +1,15 @@
+import { readFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
 import { rules } from 'eslint-plugin-import';
-import eslintPluginPackageJson from 'eslint-plugin-import/package.json' with { type: 'json' };
 import type { ConfigWithExtends } from 'typescript-eslint';
+
+const eslintPluginPackageJson = JSON.parse(
+	(
+		await readFile(
+			fileURLToPath(import.meta.resolve('eslint-plugin-import/package.json')),
+		)
+	).toString(),
+) as typeof import('eslint-plugin-import/package.json');
 
 /**
  * TODO: `eslint-plugin-import` does not yet support flat configs. There are
@@ -8,7 +17,7 @@ import type { ConfigWithExtends } from 'typescript-eslint';
  * https://github.com/import-js/eslint-plugin-import/pull/3018, but there are
  * still issues with many of these.
  *
- * The rules below are intended to match the import.recommended configuration...
+ * The rules below are intended to match the import/recommended configuration...
  * minus the ones that are not working.
  *
  * import/no-unresolved - fails to resolve modules
