@@ -8,6 +8,12 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<!-- These settings assist with builds and deployments of packages -->
+		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+		<AssemblyOriginatorKeyFile Condition="exists('$(SolutionRoot)DarkPatternsDigital.snk')">$(SolutionRoot)DarkPatternsDigital.snk</AssemblyOriginatorKeyFile>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<PackageReference Include="DarkPatterns.Build.Structure" Version="0.1.0" PrivateAssets="All" />
 	</ItemGroup>

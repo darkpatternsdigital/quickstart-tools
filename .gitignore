@@ -1,3 +1,5 @@
+*.snk
+
 ## TS packages build
 packages/*/dist/
 tsconfig*.tsbuildinfo
