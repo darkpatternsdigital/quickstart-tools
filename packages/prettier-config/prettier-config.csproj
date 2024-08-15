@@ -1,4 +1,4 @@
-<Project Sdk="DarkPatterns.Build.Pnpm/0.1.7">
+<Project Sdk="DarkPatterns.Build.Pnpm/0.1.9">
 	<PropertyGroup>
 		<VersionPrefix>0.1.0</VersionPrefix>
 		<PackPnpmOnBuild>true</PackPnpmOnBuild>

@@ -2,6 +2,7 @@
 <Project>
 	<PropertyGroup>
 		<UseArtifactsOutput>true</UseArtifactsOutput>
+		<UseCorepack>true</UseCorepack>
 		<RootNamespace>DarkPatterns.Quickstart</RootNamespace>
 
 		<TargetFramework>net8.0</TargetFramework>
