@@ -4,6 +4,7 @@ import tseslint from 'typescript-eslint';
 import { eslintImportRecommended } from './configs/import.js';
 import importOrderPart from './parts/importOrder.js';
 import namingPart from './parts/naming.js';
+import restrictImportsPart from './parts/restrictImports.js';
 
 export default tseslint.config(
 	eslint.configs.recommended,
@@ -24,4 +25,5 @@ export default tseslint.config(
 	},
 	namingPart,
 	importOrderPart,
+	restrictImportsPart,
 );
