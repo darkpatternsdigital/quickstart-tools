@@ -1,9 +1,5 @@
 {
-	"extends": "@darkpatternsdigital/tsconfigs/base",
-	"compilerOptions": {
-		"noEmit": true,
-		"allowJs": true
-	},
+	"extends": "@darkpatternsdigital/tsconfigs/monorepo",
 	"references": [
 		{
 			"path": "./packages/eslint-config"

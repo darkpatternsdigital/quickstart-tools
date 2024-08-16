@@ -15,7 +15,7 @@
 		"isolatedModules": true,
 		"noEmit": false,
 		"sourceMap": true,
-		"preserveSymlinks": false,
+		"preserveSymlinks": true,
 
 		/* Linting */
 		"strict": true,

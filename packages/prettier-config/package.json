@@ -19,6 +19,9 @@
 			}
 		}
 	},
+	"peerDependencies": {
+		"prettier": ">=3"
+	},
 	"scripts": {
 		"build": "tsc -b"
 	},

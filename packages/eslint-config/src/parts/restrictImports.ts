@@ -1,4 +1,4 @@
-import type { TSESLint } from '@typescript-eslint/utils';
+import type { ConfigWithExtends } from 'typescript-eslint';
 
 export const noRestrictedImportsPaths = [
 	{
@@ -22,4 +22,4 @@ export default {
 			},
 		],
 	},
-} as TSESLint.FlatConfig.Config;
+} as ConfigWithExtends;
