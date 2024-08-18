@@ -44,7 +44,7 @@ export const eslintImportRecommended: ConfigWithExtends = {
 		// 'import/no-unresolved': 'error',
 		'import/named': 'error',
 		// 'import/namespace': 'error',
-		'import/default': 'error',
+		// 'import/default': 'error',
 		'import/export': 'error',
 
 		// red flags (thus, warnings)

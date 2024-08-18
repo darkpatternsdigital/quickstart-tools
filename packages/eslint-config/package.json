@@ -43,7 +43,9 @@
 	"devDependencies": {
 		"@darkpatternsdigital/tsconfigs": "workspace:^",
 		"@types/eslint": "^9.6.0",
-		"@types/eslint-config-prettier": "^6.11.3",
+		"@types/eslint-config-prettier": "^6.11.3"
+	},
+	"optionalDependencies": {
 		"@typescript-eslint/utils": "^8.1.0"
 	}
 }

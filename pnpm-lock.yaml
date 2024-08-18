@@ -53,6 +53,10 @@ importers:
       typescript-eslint:
         specifier: ^8.0.1
         version: 8.0.1(eslint@9.9.0)(typescript@5.5.4)
+    optionalDependencies:
+      '@typescript-eslint/utils':
+        specifier: ^8.1.0
+        version: 8.1.0(eslint@9.9.0)(typescript@5.5.4)
     devDependencies:
       '@darkpatternsdigital/tsconfigs':
         specifier: workspace:^
@@ -63,9 +67,6 @@ importers:
       '@types/eslint-config-prettier':
         specifier: ^6.11.3
         version: 6.11.3
-      '@typescript-eslint/utils':
-        specifier: ^8.1.0
-        version: 8.1.0(eslint@9.9.0)(typescript@5.5.4)
 
   packages/prettier-config:
     dependencies:
@@ -1120,6 +1121,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.1.0
       '@typescript-eslint/visitor-keys': 8.1.0
+    optional: true
 
   '@typescript-eslint/type-utils@8.0.1(eslint@9.9.0)(typescript@5.5.4)':
     dependencies:
@@ -1135,7 +1137,8 @@ snapshots:
 
   '@typescript-eslint/types@8.0.1': {}
 
-  '@typescript-eslint/types@8.1.0': {}
+  '@typescript-eslint/types@8.1.0':
+    optional: true
 
   '@typescript-eslint/typescript-estree@8.0.1(typescript@5.5.4)':
     dependencies:
@@ -1166,6 +1169,7 @@ snapshots:
       typescript: 5.5.4
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   '@typescript-eslint/utils@8.0.1(eslint@9.9.0)(typescript@5.5.4)':
     dependencies:
@@ -1188,6 +1192,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+    optional: true
 
   '@typescript-eslint/visitor-keys@8.0.1':
     dependencies:
@@ -1198,6 +1203,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.1.0
       eslint-visitor-keys: 3.4.3
+    optional: true
 
   acorn-jsx@5.3.2(acorn@8.12.1):
     dependencies:
