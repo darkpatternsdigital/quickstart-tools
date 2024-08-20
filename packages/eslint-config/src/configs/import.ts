@@ -26,7 +26,7 @@ const eslintPluginPackageJson = JSON.parse(
  * import/no-named-as-default-member - attempts to use missing `getAncestors` on context
  */
 
-export const eslintImportRecommended: ConfigWithExtends = {
+export const eslintImportPluginOnly: ConfigWithExtends = {
 	plugins: {
 		import: {
 			meta: {
@@ -36,6 +36,10 @@ export const eslintImportRecommended: ConfigWithExtends = {
 			rules,
 		},
 	},
+};
+
+export const eslintImportRecommended: ConfigWithExtends = {
+	...eslintImportPluginOnly,
 
 	name: `import/recommended`,
 

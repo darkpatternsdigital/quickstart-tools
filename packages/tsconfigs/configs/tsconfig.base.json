@@ -1,11 +1,11 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"compilerOptions": {
-		"target": "ES2020",
-		"useDefineForClassFields": true,
+		"target": "ESNext",
 		"lib": ["ESNext"],
 		"module": "ESNext",
 		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
 		"composite": true,
 
 		/* Bundler mode */
@@ -16,6 +16,7 @@
 		"noEmit": false,
 		"sourceMap": true,
 		"preserveSymlinks": true,
+		"allowSyntheticDefaultImports": true,
 
 		/* Linting */
 		"strict": true,
