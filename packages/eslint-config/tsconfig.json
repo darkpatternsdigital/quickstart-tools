@@ -1,5 +1,5 @@
 {
-	"extends": "@darkpatternsdigital/tsconfigs/base",
+	"extends": "@darkpatternsdigital/tsconfigs/configs/tsconfig.base.json",
 	"compilerOptions": {
 		"outDir": "./dist",
 		"rootDir": "./src"
