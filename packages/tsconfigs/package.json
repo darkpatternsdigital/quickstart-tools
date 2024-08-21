@@ -1,0 +1,25 @@
+{
+	"name": "@darkpatternsdigital/tsconfigs",
+	"version": "0.1.0",
+	"description": "",
+	"type": "module",
+	"exports": {
+		"./configs/tsconfig.*.json": {
+			"default": "./configs/tsconfig.*.json"
+		}
+	},
+	"scripts": {},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"files": [
+		"configs/*",
+		"README.md"
+	],
+	"peerDependencies": {
+		"typescript": "*"
+	},
+	"devDependencies": {
+		"typescript": "*"
+	}
+}

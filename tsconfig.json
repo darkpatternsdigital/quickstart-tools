@@ -1,0 +1,13 @@
+{
+	"extends": "@darkpatternsdigital/tsconfigs/configs/tsconfig.monorepo.json",
+	"references": [
+		{
+			"path": "./packages/eslint-config"
+		},
+		{
+			"path": "./packages/prettier-config"
+		}
+	],
+	"include": ["."],
+	"exclude": ["./artifacts"]
+}

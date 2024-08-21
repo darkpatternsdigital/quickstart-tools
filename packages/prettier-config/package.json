@@ -1,0 +1,35 @@
+{
+	"name": "@darkpatternsdigital/prettier-config",
+	"version": "0.1.0",
+	"description": "",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/index.js"
+			}
+		},
+		"./*": {
+			"types": "./dist/*.d.ts",
+			"import": {
+				"types": "./dist/*.d.ts",
+				"default": "./dist/*.js"
+			}
+		}
+	},
+	"peerDependencies": {
+		"prettier": ">=3"
+	},
+	"scripts": {
+		"build": "tsc -b"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"files": [
+		"dist/*",
+		"README.md"
+	]
+}
