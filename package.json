@@ -22,7 +22,7 @@
 		"@darkpatternsdigital/prettier-config": "workspace:^",
 		"@darkpatternsdigital/tsconfigs": "workspace:^",
 		"@eslint/compat": "^1.1.1",
-		"@types/node": "^22.1.0",
+		"@types/node": "^22.4.2",
 		"eslint": "9.9.0",
 		"prettier": "^3.3.3",
 		"typescript": "^5.5.4"
