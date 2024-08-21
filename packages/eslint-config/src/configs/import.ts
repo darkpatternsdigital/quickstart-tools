@@ -17,13 +17,10 @@ const eslintPluginPackageJson = JSON.parse(
  * https://github.com/import-js/eslint-plugin-import/pull/3018, but there are
  * still issues with many of these.
  *
- * The rules below are intended to match the import/recommended configuration...
- * minus the ones that are not working.
+ * The only rule we use is `import/order`, which does not suffer the issues.
  *
- * import/no-unresolved - fails to resolve modules
- * import/namespace - languageOptions.parser is not populated at the time this rule runs
- * import/no-named-as-default - attempts to use missing `getAncestors` on context
- * import/no-named-as-default-member - attempts to use missing `getAncestors` on context
+ * typescript-eslint has some information about what eslint-plugin-import rules
+ * should be used at https://typescript-eslint.io/troubleshooting/typed-linting/performance/#eslint-plugin-import
  */
 
 export const eslintImportPluginOnly: ConfigWithExtends = {
@@ -35,32 +32,5 @@ export const eslintImportPluginOnly: ConfigWithExtends = {
 			},
 			rules,
 		},
-	},
-};
-
-export const eslintImportRecommended: ConfigWithExtends = {
-	...eslintImportPluginOnly,
-
-	name: `import/recommended`,
-
-	rules: {
-		// analysis/correctness
-		// 'import/no-unresolved': 'error',
-		'import/named': 'error',
-		// 'import/namespace': 'error',
-		// 'import/default': 'error',
-		'import/export': 'error',
-
-		// red flags (thus, warnings)
-		// 'import/no-named-as-default': 'warn',
-		// 'import/no-named-as-default-member': 'warn',
-		'import/no-duplicates': 'warn',
-	},
-
-	// need all these for parsing dependencies (even if _your_ code doesn't need
-	// all of them)
-	languageOptions: {
-		ecmaVersion: 2018,
-		sourceType: 'module',
 	},
 };
