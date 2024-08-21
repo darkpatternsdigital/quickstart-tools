@@ -78,6 +78,7 @@ jobs:
       - name: Publish NuGet packages to NuGet registry if new version number
         if: ${{ github.ref == 'refs/heads/main' }}
         run: dotnet nuget push ./artifacts/package/release/*.nupkg -k ${NUGET_API_KEY} -s https://api.nuget.org/v3/index.json --skip-duplicate --no-symbols
+        continue-on-error: true # NuGet packages might not be updated or even created yet
         env:
           NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
 
