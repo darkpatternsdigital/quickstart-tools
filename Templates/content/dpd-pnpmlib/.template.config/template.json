@@ -1,0 +1,37 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+	"author": "Dark Pattern Digital, LCA",
+	"classifications": ["pnpm", "typescript", "mts"],
+	"identity": "DarkPatterns.QuickStart.Templates.PnpmLibrary",
+	"name": "TS Library outputting module JS files",
+	"shortName": "dpd-pnpmlib",
+	"sourceName": "DpdPnpmLibrary",
+	"tags": {
+		"language": "TypeScript",
+		"type": "project"
+	},
+	"symbols": {
+		"NpmScope": {
+			"type": "parameter",
+			"dataType": "string",
+			"replaces": "npmscope",
+			"defaultValue": "local"
+		}
+	},
+	"primaryOutputs": [
+		{
+			"path": "DpdPnpmLibrary.csproj"
+		}
+	],
+	"postActions": [
+		{
+			"projectFiles": ["DpdPnpmLibrary.csproj"],
+			"description": "Add projects to solution",
+			"manualInstructions": [
+				{ "text": "Add generated project to solution manually." }
+			],
+			"actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+			"continueOnError": true
+		}
+	]
+}

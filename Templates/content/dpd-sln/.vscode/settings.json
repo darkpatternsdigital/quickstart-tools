@@ -40,5 +40,5 @@
 		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"dotnet.defaultSolution": "quickstart-tools.sln"
+	"dotnet.defaultSolution": "DpdEmptySln.sln"
 }
