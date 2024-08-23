@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- The package metadata. Fill in the properties marked as TODO below -->
+		<!-- Follow the instructions on https://learn.microsoft.com/en-us/nuget/create-packages/package-authoring-best-practices -->
+		<VersionPrefix Condition=" '$(VersionPrefix)' == '' and '$(Version)' == '' ">0.1.0</VersionPrefix>
+		<Title>Dark Patterns Digital .NET quickstart templates</Title>
+		<Description>A collection of templates for various quickstart applications.</Description>
+		<PackageTags>Templates,Web,ASP.NET,API,OpenAPI,pnpm,React,SPA</PackageTags>
+
+		<!-- Keep package type as 'Template' to show the package as a template package on nuget.org and make your template available in dotnet new search.-->
+		<PackageType>Template</PackageType>
+		<IsPackable>true</IsPackable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<ContentTargetFolders>content</ContentTargetFolders>
+		<NoWarn>$(NoWarn);NU5128</NoWarn>
+		<NoDefaultExcludes>true</NoDefaultExcludes>
+		<LocalizeTemplates>false</LocalizeTemplates>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.TemplateEngine.Tasks" Version="*" PrivateAssets="all" IsImplicitlyDefined="true"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="**\*" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="content\**\*" />
+		<Content Remove="**\bin\**" />
+		<Content Remove="**\obj\**" />
+		<Content Remove="**\node_modules\**" />
+		<Content Remove="**\artifacts\**" />
+		<Content Remove="**\dev-dist\**" />
+		<Content Remove="**\generated\**" />
+	</ItemGroup>
+
+</Project>

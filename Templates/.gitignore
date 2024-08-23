@@ -1,0 +1,3 @@
+content/**/pnpm-lock.yaml
+content/**/package-lock.json
+content/**/packages.lock.json

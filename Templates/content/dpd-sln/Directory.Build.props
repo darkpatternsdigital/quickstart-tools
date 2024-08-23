@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project>
+	<PropertyGroup>
+		<UseArtifactsOutput>true</UseArtifactsOutput>
+		<UseCorepack>true</UseCorepack>
+		<RootNamespace>DpdEmptySln</RootNamespace>
+
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DarkPatterns.Build.Structure" Version="0.1.0" PrivateAssets="All" />
+	</ItemGroup>
+</Project>

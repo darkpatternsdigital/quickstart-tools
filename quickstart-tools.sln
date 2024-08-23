@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tsconfigs", "packages\tscon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prettier-config", "packages\prettier-config\prettier-config.csproj", "{8F0873A8-EA65-47C0-9702-E6BCD587E041}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Templates", "Templates\Templates.csproj", "{533F6B32-ED7D-4424-AD99-341BB45E4DDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{8F0873A8-EA65-47C0-9702-E6BCD587E041}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F0873A8-EA65-47C0-9702-E6BCD587E041}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F0873A8-EA65-47C0-9702-E6BCD587E041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{533F6B32-ED7D-4424-AD99-341BB45E4DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533F6B32-ED7D-4424-AD99-341BB45E4DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533F6B32-ED7D-4424-AD99-341BB45E4DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533F6B32-ED7D-4424-AD99-341BB45E4DDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{059FD211-82C8-4CF2-B656-9515471675D9} = {BD1DE9D5-6FCD-4E97-9BE4-3BE6F0AFC8F0}
