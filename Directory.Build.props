@@ -17,6 +17,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="DarkPatterns.Build.Structure" Version="0.1.0" PrivateAssets="All" />
+		<PackageReference Include="DarkPatterns.Build.Autoformat" Version="0.1.2" PrivateAssets="All" />
 	</ItemGroup>
 	<Import Project="Directory.Build.local.props" Condition="exists('$(MSBuildThisFileDirectory)Directory.Build.local.props')" />
 

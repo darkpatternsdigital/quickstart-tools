@@ -2,6 +2,12 @@
   "version": 1,
   "dependencies": {
     "net8.0": {
+      "DarkPatterns.Build.Autoformat": {
+        "type": "Direct",
+        "requested": "[0.1.2, )",
+        "resolved": "0.1.2",
+        "contentHash": "o9BPP3aKRXKa5VKA33YD7LH+VWqnkXDh6SYImHCD1951Pi7AYjRTdRosCpfMrn25On3xoi+o/MDcj542TlLbsQ=="
+      },
       "DarkPatterns.Build.Structure": {
         "type": "Direct",
         "requested": "[0.1.0, )",
