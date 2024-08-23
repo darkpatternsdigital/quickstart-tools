@@ -1,0 +1,12 @@
+{
+	"extends": "@darkpatternsdigital/tsconfigs/configs/tsconfig.node.json",
+	"compilerOptions": {
+		"rootDir": ".",
+		"outDir": "../dist/",
+		"tsBuildInfoFile": "../.src.tsbuildinfo",
+
+		"paths": {
+			"@/*": ["./*"]
+		}
+	}
+}

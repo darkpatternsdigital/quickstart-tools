@@ -1,4 +1,5 @@
 *.snk
+*.local.*
 
 ## TS packages build
 packages/*/dist/
