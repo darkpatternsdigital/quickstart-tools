@@ -1,6 +1,6 @@
 import type { ConfigWithExtends } from 'typescript-eslint';
 
-const namingConventions = [
+export const namingConventions = [
 	{
 		selector: 'default',
 		// React requires PascalCase for components, which can
