@@ -1,4 +1,4 @@
-<Project Sdk="DarkPatterns.Build.Pnpm/0.1.12">
+<Project Sdk="DarkPatterns.Build.Pnpm/0.1.14">
 	<PropertyGroup>
 		<PackPnpmOnBuild Condition=" $(Configuration) == 'Release' ">true</PackPnpmOnBuild>
 	</PropertyGroup>
