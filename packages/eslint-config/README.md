@@ -26,6 +26,10 @@ Provides a standard set of configs for eslint projects.
 
 - `default` contains the typical rules for a typescript project, including type checking.
 
+### `@darkpatternsdigital/eslint-config/tsx`
+
+- `default` contains the typical rules for a typscript project, including type checking, but allows JSX-style naming conventions in JSX or TSX files.
+
 ### `@darkpatternsdigital/eslint-config/types`
 
 - `tseslint` - re-exports the default export of `typescript-eslint` for convenience.
@@ -33,3 +37,7 @@ Provides a standard set of configs for eslint projects.
 ### `@darkpatternsdigital/eslint-config/untyped`
 
 - `default` contains the typical rules for a project that does not support type checking.
+
+### `@darkpatternsdigital/eslint-config/jsx`
+
+- `default` contains the typical rules for a project that does not support type checking, but allows JSX-style naming conventions in JSX or TSX files.
