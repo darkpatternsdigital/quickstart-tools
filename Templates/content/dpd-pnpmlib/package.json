@@ -1,10 +1,10 @@
 {
-	"name": "@npmscope/dpdpnpmlibrary",
+	"name": "@npmscope/npmlibrary",
 	"version": "0.1.0",
 	"description": "",
 	"private": "true",
 	"scripts": {
-		"build": "tsc -b && tsc-alias -p src/tsconfig.json"
+		"build": "pnpm -w exec tsc -b"
 	},
 	"author": "",
 	"license": "",
@@ -21,6 +21,5 @@
 	"dependencies": {
 	},
 	"devDependencies": {
-		"tsc-alias": "^1.8.10"
 	}
 }

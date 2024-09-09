@@ -1,14 +1,22 @@
 <Project Sdk="DarkPatterns.Build.Pnpm/0.1.14">
 	<PropertyGroup>
-		<PackPnpmOnBuild Condition=" $(Configuration) == 'Release' ">true</PackPnpmOnBuild>
+		<SrcOutputDir>$(ProjectDir)dist/</SrcOutputDir>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Compile Remove="src/**/stories/**/*;src/**/*.stories.*" />
-		<Watch Include="$(SolutionRoot)schemas/**/*" />
-
-		<CompileOutputs Include="@(Compile->'$(ProjectDir)/dist/%(filename).mjs');@(Compile->'$(ProjectDir)/dist/%(filename).d.ts')" />
-		<CompileOutputs Include=".src.tsbuildinfo" />
+		<CompileOutputs
+			Include="@(Compile->WithMetadataValue('Extension', '.ts')->
+				'$(SrcOutputDir)%(RecursiveDir)%(filename).js')" />
+		<CompileOutputs
+			Include="@(Compile->WithMetadataValue('Extension', '.ts')->
+				'$(SrcOutputDir)%(RecursiveDir)%(filename).d.ts')" />
+		<CompileOutputs
+			Include="@(Compile->WithMetadataValue('Extension', '.mts')->
+				'$(SrcOutputDir)%(RecursiveDir)%(filename).mjs')" />
+		<CompileOutputs
+			Include="@(Compile->WithMetadataValue('Extension', '.mts')->
+				'$(SrcOutputDir)%(RecursiveDir)%(filename).d.mts')" />
+		<CompileOutputs Include="$(SrcOutputDir)tsconfig.tsbuildinfo" />
 	</ItemGroup>
 
 </Project>
