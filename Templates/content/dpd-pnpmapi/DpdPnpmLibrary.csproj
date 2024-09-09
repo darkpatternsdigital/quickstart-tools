@@ -19,4 +19,10 @@
 		<CompileOutputs Include="$(SrcOutputDir)tsconfig.tsbuildinfo" />
 	</ItemGroup>
 
+	<Target Name="Generation" BeforeTargets="PrepareForBuild" />
+
+	<Target Name="GenerateApi" BeforeTargets="Generation" DependsOnTargets="PnpmInstall" Inputs="$(SolutionRoot)schemas\api.yaml" Outputs="src/generated/api/.gitignore">
+		<Exec WorkingDirectory="$(ProjectDir)" Command="pnpm openapi-codegen-typescript $(SolutionRoot)schemas/api.yaml src/generated/api/ -c -o codegen.config.yaml"/>
+	</Target>
+
 </Project>

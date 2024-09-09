@@ -1,0 +1,12 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+	"author": "Dark Pattern Digital, LCA",
+	"classifications": ["OpenAPI"],
+	"identity": "DarkPatterns.QuickStart.Templates.OpenApi._3_0",
+	"name": "Basic OpenAPI 3.0",
+	"shortName": "dpd-openapi",
+	"tags": {
+		"language": "YAML",
+		"type": "item"
+	}
+}

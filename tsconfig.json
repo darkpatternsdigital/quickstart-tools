@@ -9,5 +9,5 @@
 		}
 	],
 	"include": ["."],
-	"exclude": ["./artifacts"]
+	"exclude": ["./artifacts", "Templates/content/"]
 }

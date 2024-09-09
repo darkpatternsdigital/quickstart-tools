@@ -1,0 +1,14 @@
+{
+	"extends": "@darkpatternsdigital/tsconfigs/configs/tsconfig.node.json",
+	"compilerOptions": {
+		"rootDir": ".",
+		"outDir": "./dev-dist/node",
+		"lib": ["ESNext", "DOM"]
+	},
+	"exclude": ["./src"],
+	"references": [
+		{
+			"path": "./src/tsconfig.json"
+		}
+	]
+}

@@ -2,9 +2,9 @@
 	"$schema": "http://json.schemastore.org/template",
 	"author": "Dark Pattern Digital, LCA",
 	"classifications": ["pnpm", "typescript", "mts"],
-	"identity": "DarkPatterns.QuickStart.Templates.PnpmLibrary",
-	"name": "TS Library outputting module JS files",
-	"shortName": "dpd-pnpmlib",
+	"identity": "DarkPatterns.QuickStart.Templates.PnpmApiLibrary",
+	"name": "TS Library outputting module JS files with an API build process",
+	"shortName": "dpd-pnpmapi",
 	"sourceName": "DpdPnpmLibrary",
 	"tags": {
 		"language": "TypeScript",
