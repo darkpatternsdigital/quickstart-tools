@@ -10,8 +10,9 @@
 	"author": "",
 	"license": "",
 	"files": [
-	  "dist/*",
-	  "README.md"
+		"dist/*",
+		"!dist/tsconfig.tsbuildinfo",
+		"README.md"
 	],
 	"exports": {
 		"./*": {
