@@ -15,11 +15,17 @@
 	],
 	"exports": {
 		"./*": {
-			"types": "./dist/*.d.mts",
-			"default": "./dist/*.mjs"
+			"types": "./dist/public/*.d.mts",
+			"default": "./dist/public/*.mjs"
+		},
+		"./models/*": {
+			"types": "./dist/generated/api/models/*.d.ts",
+			"default": "./dist/generated/api/models/*.js"
 		}
 	},
 	"dependencies": {
+		"@darkpatternsdigital/openapi-codegen-typescript": "0.10.1",
+		"@darkpatternsdigital/openapi-codegen-typescript-fetch": "0.8.1"
 	},
 	"devDependencies": {
 	}

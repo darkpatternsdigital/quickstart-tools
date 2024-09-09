@@ -1,0 +1,28 @@
+<Project Sdk="DarkPatterns.Build.Pnpm/0.1.14">
+	<PropertyGroup>
+		<SrcOutputDir>$(ProjectDir)dist/</SrcOutputDir>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<CompileOutputs
+			Include="@(Compile->WithMetadataValue('Extension', '.ts')->
+				'$(SrcOutputDir)%(RecursiveDir)%(filename).js')" />
+		<CompileOutputs
+			Include="@(Compile->WithMetadataValue('Extension', '.ts')->
+				'$(SrcOutputDir)%(RecursiveDir)%(filename).d.ts')" />
+		<CompileOutputs
+			Include="@(Compile->WithMetadataValue('Extension', '.mts')->
+				'$(SrcOutputDir)%(RecursiveDir)%(filename).mjs')" />
+		<CompileOutputs
+			Include="@(Compile->WithMetadataValue('Extension', '.mts')->
+				'$(SrcOutputDir)%(RecursiveDir)%(filename).d.mts')" />
+		<CompileOutputs Include="$(SrcOutputDir)tsconfig.tsbuildinfo" />
+	</ItemGroup>
+
+	<Target Name="Generation" BeforeTargets="PrepareForBuild" />
+
+	<Target Name="GenerateApi" BeforeTargets="Generation" DependsOnTargets="PnpmInstall" Inputs="$(SolutionRoot)schemas\api.yaml" Outputs="src/generated/api/.gitignore">
+		<Exec WorkingDirectory="$(ProjectDir)" Command="pnpm openapi-codegen-typescript ../schemas/api.yaml src/generated/api/ -c -o codegen.config.yaml"/>
+	</Target>
+
+</Project>
