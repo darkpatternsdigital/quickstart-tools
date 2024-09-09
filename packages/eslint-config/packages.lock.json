@@ -10,9 +10,9 @@
       },
       "DarkPatterns.Build.Structure": {
         "type": "Direct",
-        "requested": "[0.1.0, )",
-        "resolved": "0.1.0",
-        "contentHash": "KjXcBxhGkO+Zn7DaKANxAxgZMCdBURVApvJpiBtgSUfUrWE96n1TICJlm5j2rDjJe2p/EMz36QWL2PhpdW1u0w=="
+        "requested": "[0.1.1, )",
+        "resolved": "0.1.1",
+        "contentHash": "Fjf/prTFdvr6HBJaLJUH526fUawWdSMi1u1SwXFhbxGOdDjnAsiBSgZAxf2LxXJ2B6u9y3tQjcC+SONa0ZLBew=="
       },
       "JsonPeek": {
         "type": "Direct",
