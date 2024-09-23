@@ -37,7 +37,7 @@
 	"pnpm": {
 		"peerDependencyRules": {
 			"allowedVersions": {
-				"eslint-plugin-import@2.29.1>eslint": ">=9"
+				"eslint-plugin-import@2.30.0>eslint": ">=9"
 			}
 		}
 	}
