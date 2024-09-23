@@ -1,6 +1,6 @@
 {
 	"name": "@darkpatternsdigital/eslint-config",
-	"version": "0.2.2",
+	"version": "0.2.1",
 	"description": "",
 	"type": "module",
 	"exports": {
