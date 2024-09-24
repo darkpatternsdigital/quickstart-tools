@@ -2,7 +2,7 @@
 
 This is a basic .NET/pnpm starter.
 
-- Leverages corepack for your `pnpm` runtime; ensure `corepack` is available on your path.
+- Ensure `pnpm` is available on your path. Using >=9.10.0, you can control the pnpm and node versions from the package.json.
 - Builds and lints via the `dotnet` cli.
 
 ## Build

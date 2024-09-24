@@ -4,6 +4,12 @@
 	"description": "",
 	"private": "true",
 	"type": "module",
+	"engines": {
+		"node": ">=20.16.0",
+		"pnpm": ">=9.10.0",
+		"npm": "use-pnpm",
+		"yarn": "use-pnpm"
+	},
 	"scripts": {
 		"test": "dotnet test",
 		"lint": "pnpm run typecheck && pnpm run eslint:check && pnpm run prettier:check",
@@ -27,11 +33,11 @@
 		"prettier": "^3.3.3",
 		"typescript": "^5.6.2"
 	},
-	"packageManager": "pnpm@9.7.1+sha512.faf344af2d6ca65c4c5c8c2224ea77a81a5e8859cbc4e06b1511ddce2f0151512431dd19e6aff31f2c6a8f5f2aced9bd2273e1fed7dd4de1868984059d2c4247",
+	"packageManager": "pnpm@9.10.0",
 	"pnpm": {
 		"peerDependencyRules": {
 			"allowedVersions": {
-				"eslint-plugin-import@2.29.1>eslint": ">=9"
+				"eslint-plugin-import@2.30.0>eslint": ">=9"
 			}
 		}
 	}

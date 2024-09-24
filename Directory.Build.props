@@ -2,7 +2,6 @@
 <Project>
 	<PropertyGroup>
 		<UseArtifactsOutput>true</UseArtifactsOutput>
-		<UseCorepack>true</UseCorepack>
 		<SolutionRoot>$(MSBuildThisFileDirectory)</SolutionRoot>
 		<RepositoryEngineeringDir>$(SolutionRoot)eng/</RepositoryEngineeringDir>
 		<RootNamespace>DarkPatterns.Quickstart</RootNamespace>
