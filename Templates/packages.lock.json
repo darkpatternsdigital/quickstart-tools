@@ -4,9 +4,9 @@
     "net8.0": {
       "DarkPatterns.Build.Autoformat": {
         "type": "Direct",
-        "requested": "[0.1.2, )",
-        "resolved": "0.1.2",
-        "contentHash": "o9BPP3aKRXKa5VKA33YD7LH+VWqnkXDh6SYImHCD1951Pi7AYjRTdRosCpfMrn25On3xoi+o/MDcj542TlLbsQ=="
+        "requested": "[0.2.0, )",
+        "resolved": "0.2.0",
+        "contentHash": "7PoernGGegieVMEjS3fgWWYKnMUyEB/ybst1/WshRbQYd5NA9JCGxMAOOowR5X5PgXPnNa+J44C0oVjZjTFaAQ=="
       },
       "DarkPatterns.Build.Structure": {
         "type": "Direct",
